@@ -174,10 +174,7 @@ img {
 
 /**
  * Correct overflow not hidden in IE 9/10/11.
- */
-svg:not(:root) {
-    overflow: hidden;
-}
+
 
 /* Grouping content
    ========================================================================== */
@@ -827,9 +824,16 @@ img {
     max-width: 100%;
 }
 
+
+/* <---------------------------------------------------
+                    
+                HEADER ELEMENTS BELOW
+
+ --------------------------------------------------->*/
 .paralax-header-box {
     position: relative;
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
     background: linear-gradient(0deg, #4CA59B 40%, #1e443f 50%, #000 10%);
     background: -webkit-linear-gradient(0deg, #4CA59B 0%, #4ca59b 100%);
     background: -o-linear-gradient(0deg, #4CA59B 0%, #4ca59b 100%);
@@ -838,17 +842,18 @@ img {
     background-size:cover;
 background-position:center center;
     background-attachment: fixed;
-    overflow: hidden;
+
     z-index: -999999999;
+
 }
 
 
 
+
 .paralax-cal {
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/calendar.svg);
-    overflow: hidden;
+    width: 160px;
+    height: 168px;
+    background-image: url(../images/no-bg/calendar.svg);
     background-repeat: no-repeat;
     position: absolute;
     z-index: -1;
@@ -856,29 +861,29 @@ background-position:center center;
     left: 0;
     background-size:cover;
     background-position:center center;
+    margin: 60vh 0 0 78vw;
 }
 
 #paralax-gears {
-  width: 100%;
-  height: 100%;
-  background-image: url(../images/gears.svg);
-  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  background-image: url(../images/no-bg/gears.svg);
   background-repeat: no-repeat;
   position: absolute;
-  z-index: -2;
+  z-index: -5;
   margin: -10% 0 0 100px;
   top: 0;
   left: 0;
   background-size:cover;
   background-position:center center;
+  margin: 60vh 0 0 59vw;
 }
 
 
 .paralax-stars {
-    width: 100vw;
-    height: 100vh;
-    background-image: url(../images/stars.svg);
-    overflow: hidden;
+    width: 130px;
+    height: 48px;
+    background-image: url(../images/no-bg/stars.svg);
     background-repeat: no-repeat;
     position: absolute;
     z-index: -3;
@@ -886,56 +891,153 @@ background-position:center center;
     left: 0;
     background-size:cover;
     background-position:center center;
+    margin: 55vh 0 0 80vw;
 }
 
  .paralax-clock {
-    height: 100%;
-    width: 100%;
-    background-image: url(../images/clock.svg);
+    height: 450px;
+    width:  420px;
+    background-image: url(../images/no-bg/clock.svg);
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
+    overflow: visible;
     z-index: -4;
     top: 0;
     left: 0;
     background-size:cover;
     background-position:center center;
+    margin: 25vh 0 0 60vw;
 }
 
 
 
 .paralax-envilope {
-  width: 100vw;
-  height: 100vh;
-  background-image: url(../images/envilope.svg);
-  overflow: hidden;
+  width: 178px;
+  height: 150px;
+  background-image: url(../images/no-bg/envilope.svg);
   background-repeat: no-repeat;
-  background-position: right bottom;
   position: absolute;
   z-index: -4;
-  top: 200px;
-  left: -200px;
+  top: 0;
+  left: 0;
   background-size:cover;
   background-position:center center;
+  margin: 29vh 0 0 79vw;
 }
 
 
 .paralax-comments {
-    width: 100vw;
-    height: 100vh;
-    background-image: url(../images/comments.svg);
+    width: 200px;
+    height: 200px;
+    background-image: url(../images/no-bg/comments.svg);
     background-repeat: no-repeat;
-    background-position: top left;
     position: absolute;
-    z-index: -6;
+    z-index: 6;
     top: 0;
     left: 0;
     background-size:cover;
     background-position:center center;
+    margin: 25vh 0 0 54vw;
 }
 
 
 
+#sumit-title {
+    background: url(../images/no-bg/sumit-logo.svg);
+    background-repeat: no-repeat;
+    max-width: 100px !important;
+    max-height: 40px !important;
+    /* position: sticky; */
+    z-index: 2!important;
+    float: left;
+    position: relative;
+    filter: invert(50%);
+    list-style: none!important;
+padding: 45px;
+margin: 10px 0 0 20px;
+
+}
+
+#menu-icon {
+    background: url(../images/menu-icon.svg);
+    background-repeat: no-repeat;
+    max-width: 100px !important;
+    max-height: 100px !important;
+    /* position: relative; */
+    z-index: 2!important;
+    float: right;
+    filter: invert(50%);
+    position: sticky;
+    list-style: none!important;
+padding: 30px;
+margin-top: 10px;
+    
+}
+
+
+
+#white-mound {
+    height: 100% !important;
+    width: 100% !important;
+    background-image: url(../images/no-bg/white-mtn.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    z-index: -20;
+    left: 0;
+    top: 0;
+    background-size:cover;
+    margin: 30vh 0 0 0vw;
+/* background-position:center center; */
+}
+
+/* header copy and buttons */
+#header-copy {
+    width: 500px;
+    height: 400px;
+    background-image: url(../images/no-bg/header-copy.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size:cover;
+    background-position: left bottom;
+    margin: 20vh 10vw 0 7vw;
+}
+
+#log-in,
+#sign-up {
+    width: 140px;
+    height: 28px;
+    border-radius: 5px 5px 15px 5px;
+    border-color: transparent;
+    position: relative;
+    z-index: 999999999;
+    outline: transparent;
+    color: black;
+    margin: 260px 100px 0 -1px;
+    box-shadow: 1px 1px 2px rgb(128, 128, 128), inset 1px 1px 8px rgba(255, 255, 255, 0.397);
+    font-weight: 600;
+}
+
+#log-in{
+background-color: yellowgreen;
+}
+#sign-up {
+    background-color: #55cccc;
+} 
+
+button:hover {
+    box-shadow: 1px 1px  rgb(128, 128, 128), inset 1px 1px 8px rgba(110, 110, 110, 0.397);
+}
+
+/* <---------------------------------------------------
+                    
+                HEADER ELEMENTS BELOW
+
+ --------------------------------------------------->*/
 
 .cta-cards {
     margin-top: -100px;
@@ -966,60 +1068,6 @@ background-position:center center;
     margin: 0 0 10px 0;
 }
 
-#sumit-title {
-    margin: 1px 0 0 10px;
-    color: silver;
-    font-size: 40px;
-    position: fixed;
-    z-index: 99999;
-    float: left !important;
-}
-
-#menu-icon {
-    background: url(../images/menu-icon.svg);
-    padding: 20px;
-    margin: 10px 0 0 95vw;
-    max-width: 20px !important;
-    max-height: 20px !important;
-    position: fixed;
-    z-index: 99;
-    float: right !important;
-    filter: invert(50%);
-}
-
-#header-copy {
-    width: 100%;
-    height: 100%;
-    background-image: url(../images//header-copy.svg);
-    background-repeat: no-repeat;
-    background-position: top left;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-size:cover;
-    background-position: left bottom;
-}
-
-#white-mound {
-    height: 130vh !important;
-    width: 130vw !important;
-    background-image: url(../images/white-mtn.svg);
-    background-repeat: no-repeat;
-    background-position: top left;
-    position: absolute;
-    z-index: -20;
-    left: 0;
-    top: 0;
-    background-size:cover;
-/* background-position:center center; */
-}
-
-
 details summary::-webkit-details-marker {
     display: none !important;
-}
-
-
-#container-bkgrnd-home {
-    background: linear-gradient(transparent 1%, white, white, white, white, white, white, white, white);
 }
