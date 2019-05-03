@@ -835,9 +835,11 @@ img {
     background: -o-linear-gradient(0deg, #4CA59B 0%, #4ca59b 100%);
     background: -moz-linear-gradient(0deg, #4CA59B 0%, #4ca59b 100%);
     background-size: auto 600px;
-    background-position: top center;
+    background-size:cover;
+background-position:center center;
     background-attachment: fixed;
     overflow: hidden;
+    z-index: -999999999;
 }
 
 
@@ -848,35 +850,42 @@ img {
     background-image: url(../images/calendar.svg);
     overflow: hidden;
     background-repeat: no-repeat;
-    background-position: right bottom;
     position: absolute;
+    z-index: -1;
     top: 0;
     left: 0;
+    background-size:cover;
+    background-position:center center;
 }
 
-.paralax-gears {
+#paralax-gears {
   width: 100%;
   height: 100%;
+  background-image: url(../images/gears.svg);
   overflow: hidden;
   background-repeat: no-repeat;
-  background-position: right bottom;
   position: absolute;
-  margin: 0 0 0 -20%;
+  z-index: -2;
+  margin: -10% 0 0 100px;
   top: 0;
   left: 0;
+  background-size:cover;
+  background-position:center center;
 }
 
 
 .paralax-stars {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-image: url(../images/stars.svg);
     overflow: hidden;
     background-repeat: no-repeat;
-    background-position: right bottom;
     position: absolute;
+    z-index: -3;
     top: 0;
     left: 0;
+    background-size:cover;
+    background-position:center center;
 }
 
  .paralax-clock {
@@ -886,32 +895,43 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
+    z-index: -4;
     top: 0;
     left: 0;
+    background-size:cover;
+    background-position:center center;
 }
 
+
+
 .paralax-envilope {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-image: url(../images/envilope.svg);
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: right bottom;
   position: absolute;
-  top: -16%;
-  left: 3%;
+  z-index: -4;
+  top: 200px;
+  left: -200px;
+  background-size:cover;
+  background-position:center center;
 }
 
 
 .paralax-comments {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-image: url(../images/comments.svg);
     background-repeat: no-repeat;
     background-position: top left;
     position: absolute;
+    z-index: -6;
     top: 0;
-    left: 3%;
+    left: 0;
+    background-size:cover;
+    background-position:center center;
 }
 
 
@@ -975,18 +995,23 @@ img {
     background-position: top left;
     position: absolute;
     left: 0;
-    top: 0
+    top: 0;
+    background-size:cover;
+    background-position: left bottom;
 }
 
 #white-mound {
-    height: 130%!important;
-    width: 130% !important;
+    height: 130vh !important;
+    width: 130vw !important;
     background-image: url(../images/white-mtn.svg);
     background-repeat: no-repeat;
     background-position: top left;
     position: absolute;
+    z-index: -20;
     left: 0;
     top: 0;
+    background-size:cover;
+/* background-position:center center; */
 }
 
 
