@@ -1,26 +1,47 @@
 // A $( document ).ready() block.
 $( document ).ready(function() {
-  $("#header-copy").hide();
-
+  $("#header-copy").show(311);
+$("#sumit-title").hide();
+$("#menu-icon").hide();
+$("#log-in").hide();
+$("#sign-up").hide();
+$(".clock").show();
 
 $(window).scroll(function(){
-  $("#header-copy").show(500);
-
+  $("#log-in").show(411);
+  $("#sign-up").show(740);
+  $("#sumit-title").show(254);
+  $("#menu-icon").show(254);
 
   var wScroll = $(this).scrollTop();
   var Scroll = $(window).scrollTop();
 
   $('.paralax-clock').css({
-    'transform' : 'translate(0px, '+ wScroll /38 +'%)'
+    'transform' : 'translate(0px, -'+ wScroll /1 +'%)'
   });
 
   $('.paralax-comments').css({
-    'transform' : 'translate(0px, '+ wScroll /40 +'%)'
+    'transform' : 'translate(0px, -'+ wScroll /4 +'%)'
   });
 
   $('.paralax-cal').css({
     'transform' : 'translate(0px, -'+ wScroll /10 +'%)'
   });
+
+  $('.paralax-envilope').css({
+    'transform' : 'translate(0px, -'+ wScroll /8 +'%)'
+  });
+
+  $('.paralax-stars').css({
+    'transform' : 'translate(0px, -'+ wScroll /0.3 +'%)'
+  });
+
+  $('#paralax-gears').css({
+    'transform' : 'translate(0px, -'+ wScroll /0.41 +'%)'
+  });
+
+
+ 
 
   if(wScroll > $('.cta-cards').offset().top - $(window).height()){
 
@@ -54,4 +75,8 @@ $(window).scroll(function(){
 
 });
 
+});
+
+$('button').click(function(){
+  console.log("clicked");
 });
